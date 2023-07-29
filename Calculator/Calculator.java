@@ -35,7 +35,8 @@ class Calculator
                 }
                 else
                 {
-                    num1 = word;
+                    // Convert String to int and store as number
+                    num1 = Integer.parseInt(word);
                     // reset word
                     word = "";
                 }
@@ -47,7 +48,8 @@ class Calculator
             // Check if reached the end of String
             if (i == lenght - 1)
             {
-                num2 = word;
+                // Convert String to int and store as number
+                num2 = Integer.parseInt(word);
                 // reset word
                 word = "";
             }
