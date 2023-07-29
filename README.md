@@ -2,7 +2,7 @@
 Collection of fundamental java programs
 
 ## License
-This project is licensed under the [MIT License](./License)
+This project is licensed under the [MIT License](./license)
 
 ## Contributing
 Please feel free to open an issue or submit a pull request.
