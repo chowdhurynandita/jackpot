@@ -1,3 +1,4 @@
+// TODO: Write a brief program description
 import java.util.*;
 
 class Calculator
@@ -5,37 +6,64 @@ class Calculator
     public static void main(String args[])
     {
         // Input expression from user
-        String expression = input();
+        // trim() removes white spaces from both the ends of string
+        String expression = input().trim();
 
-        float num1, num2;
+        float num1, num2, answer;
         char operator;
 
         // Calculate length of expression
         int length = expression.length();
 
-        // Iterate through the entire expression to find numbers and operator
+        // Create temporary String variable
+        String word = "";
+
+        // Find numbers and operator in expression
         for (int i = 0; i < length; i++)
         {
-            // Extract character at index i
-            char ch = expression.charAt(i);
-            
+            // TODO: Extract character at index i
+            char ch = ;
+            // If you encounter a space it means end of a number/operator
             if (ch == ' ')
             {
-                // Check if the formed word
-                if (! Character.isDigit(word))
+                // Check if the formed word is not a digit
+                if (! Character.isDigit(word[0]))
                 {
                     operator = word;
+                    // reset word
                     word = "";
                 }
                 else
                 {
                     num1 = word;
+                    // reset word
                     word = "";
                 }
             }
-            String word += ch;
-            word
+            else
+            {
+                // TODO: Concatenate character to word
+            }
+            // Check if reached the end of String
+            if (i == lenght - 1)
+            {
+                num2 = word;
+                // reset word
+                word = "";
+            }
         }
+
+        // Calculate answer
+        switch(operator)
+        {
+            case '+':
+            answer = add(num1, num2);
+            break;
+
+            // TODO: Write other cases
+        }
+
+        // TODO: Display answer
     }
 
     // Input String expression form user
@@ -57,24 +85,30 @@ class Calculator
     // Subtract two numbers
     public static float subtract(float num1, float num2)
     {
+        // TODO: Calculate difference
 
+        // TODO: Return answer
     }
 
     // Multiply two numbers
     public static float multiply(float num1, float num2)
     {
+        // TODO: Calculate product
 
+        // TODO: Return answer
     }
 
     // Divide two numbers
     public static float divide(float num1, float num2)
     {
+        // TODO: Calculate quotient
 
+        // TODO: Return answer
     }
 
     // Display calculated answer
     public static void display(float answer)
     {
-
+        // TODO: Print answer
     }
 }
