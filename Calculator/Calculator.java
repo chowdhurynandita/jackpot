@@ -90,7 +90,7 @@ class Calculator
         try (Scanner sc = new Scanner(System.in))
         {
             // Prompt user to enter
-            System.out.println("Expression: ");
+            System.out.print("Expression: ");
             String expression = sc.nextLine();
 
             return expression;
