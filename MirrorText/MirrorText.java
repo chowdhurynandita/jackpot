@@ -1,4 +1,4 @@
-// TODO: Write a brief program description
+// Program creates mirror texts
 import java.util.*;
 
 class MirrorText

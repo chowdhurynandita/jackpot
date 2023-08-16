@@ -1,25 +1,27 @@
-// TODO: Write a brief program description
+// Write a brief program description
 import java.util.*;
 
 class Trigo
 {
     public static void main(String args[])
     {
-        Scanner sc = new Scanner(System.in);
+        String expression = "";
+        try (Scanner sc = new Scanner(System.in))
+        {
+            // Prompt user to enter input
+            System.out.print("Enter input: ");
+            
+            // Input expression
+            expression = sc.nextLine().trim();
+        }
         
-        // TODO: Prompt user to enter input
-        System.out.print("Enter input: ");
-        
-        // Input expression
-        String expression = sc.nextLine().trim();
-
-        // TODO: Create object
+        // Create object
         Trigo obj = new Trigo();
         
-        // TODO: Use object to call calculate(), pass String as argument and store returned answer in float variable
+        // Use object to call calculate(), pass String as argument and store returned answer in float variable
         float answer = (float) obj.calculate(expression);
 
-        // TODO: Display answer by calling display() and passing answer as argument
+        // Display answer by calling display() and passing answer as argument
         obj.display(answer);
     }
 
@@ -28,7 +30,7 @@ class Trigo
     {
         double answer = 0.0;
         
-        // TODO: Find length of String
+        // Find length of String
         int length = expression.length();
 
         String function = "", word = "";
@@ -38,10 +40,10 @@ class Trigo
         int i = 0;
         while (i < length)
         {
-            // TODO: Extract character
+            // Extract character
             char ch = expression.charAt(i);
 
-            /* TODO: Store function name in variable if blank space is encountered.
+            /* Store function name in variable if blank space is encountered.
                Also reset word to blank */
             if (ch == ' ')
             {
@@ -57,7 +59,7 @@ class Trigo
                 // Convert the angle in degrees from String to double
                 angle = Double.parseDouble(word);
                 
-                // TODO: Convert the angle in degrees to radians
+                // Convert the angle in degrees to radians
                 angle = Math.toRadians(angle);
                 
                 word = "";
@@ -68,10 +70,10 @@ class Trigo
         switch(function)
         {
             case "sin":
-                // TODO: Calculate sine value for angle and store in answer
+                // Calculate sine value for angle and store in answer
                 answer = Math.sin(angle);
                 break;
-            // TODO: Write other cases
+            // Write other cases
             case "cos":
                 answer = Math.cos(angle);
                 break;

@@ -1,4 +1,4 @@
-// TODO: Write a brief program description
+// Program performs simple addition, subtraction, division & multiplication using separate functions
 import java.util.*;
 
 class Calculator
@@ -21,7 +21,7 @@ class Calculator
         // Find numbers and operator in expression
         for (int i = 0; i < length; i++)
         {
-            // TODO: Extract character at index i
+            // Extract character at index i
             char ch = expression.charAt(i);
             // If you encounter a space it means end of a number/operator
             if (ch == ' ')
@@ -43,7 +43,7 @@ class Calculator
             }
             else
             {
-                // TODO: Concatenate character to word
+                // Concatenate character to word
                 word += ch;
             }
             // Check if reached the end of String
@@ -63,7 +63,7 @@ class Calculator
                 answer = add(num1, num2);
                 break;
 
-            // TODO: Write other cases
+            // Write other cases
             case '-':
                 answer = subtract(num1, num2);
                 break;
@@ -80,19 +80,21 @@ class Calculator
                 System.out.println("WRONG INPUT!");
         }
 
-        // TODO: Display answer
+        // Display answer
         display(answer);
     }
 
     // Input String expression form user
     public static String input()
     {
-        Scanner sc = new Scanner(System.in);
-        // TODO: Prompt user to enter
-        System.out.println("Expression: ");
-        String expression = sc.nextLine();
+        try (Scanner sc = new Scanner(System.in))
+        {
+            // Prompt user to enter
+            System.out.println("Expression: ");
+            String expression = sc.nextLine();
 
-        return expression;
+            return expression;
+        }
     }
 
     // Add two numbers
@@ -122,7 +124,7 @@ class Calculator
     // Display calculated answer
     public static void display(float answer)
     {
-        // TODO: Print answer
+        // Print answer
         System.out.println("Answer: " + answer);
     }
 }
