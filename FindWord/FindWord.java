@@ -8,7 +8,7 @@ class FindWord {
         FindWord obj = new FindWord();
 
         // Create File object for the file name entered by user in command line.
-        File textfile = new File(args[0]);
+        File textfile = new File("short.txt");
 
         // Remember count of occurences of word in text file.
         int occurences = 0;
@@ -18,7 +18,7 @@ class FindWord {
         try (Scanner sc = new Scanner(System.in)) {
             // Prompt user to input the word to be searched
             System.out.print("Search-word: ");
-            word = sc.nextLine();
+            word = "house";
         }
         // Create Scanner object to read from text file.
         try (Scanner sc = new Scanner(textfile)) {

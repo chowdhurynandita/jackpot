@@ -1,0 +1,91 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Angles",
+            "request": "launch",
+            "mainClass": "Angles",
+            "projectName": "jackpot_cad81f4"
+        },
+        {
+            "type": "java",
+            "name": "Calculator",
+            "request": "launch",
+            "mainClass": "Calculator",
+            "projectName": "jackpot_cad81f4"
+        },
+        {
+            "type": "java",
+            "name": "CheckCharacter",
+            "request": "launch",
+            "mainClass": "CheckCharacter",
+            "projectName": "jackpot_cad81f4"
+        },
+        {
+            "type": "java",
+            "name": "EncodeText",
+            "request": "launch",
+            "mainClass": "EncodeText",
+            "projectName": "jackpot_cad81f4"
+        },
+        {
+            "type": "java",
+            "name": "FindWord",
+            "request": "launch",
+            "mainClass": "FindWord",
+            "projectName": "jackpot_cad81f4"
+        },
+        {
+            "type": "java",
+            "name": "MergeNum",
+            "request": "launch",
+            "mainClass": "MergeNum",
+            "projectName": "jackpot_cad81f4"
+        },
+        {
+            "type": "java",
+            "name": "MirrorText",
+            "request": "launch",
+            "mainClass": "MirrorText",
+            "projectName": "jackpot_cad81f4"
+        },
+        {
+            "type": "java",
+            "name": "Sample",
+            "request": "launch",
+            "mainClass": "Sample",
+            "projectName": "jackpot_cad81f4"
+        },
+        {
+            "type": "java",
+            "name": "Temprature",
+            "request": "launch",
+            "mainClass": "Temprature",
+            "projectName": "jackpot_cad81f4"
+        },
+        {
+            "type": "java",
+            "name": "Trigo",
+            "request": "launch",
+            "mainClass": "Trigo",
+            "projectName": "jackpot_cad81f4"
+        },
+        {
+            "type": "java",
+            "name": "VowOrCon",
+            "request": "launch",
+            "mainClass": "VowOrCon",
+            "projectName": "jackpot_cad81f4"
+        }
+    ]
+}
