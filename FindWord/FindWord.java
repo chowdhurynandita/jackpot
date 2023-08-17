@@ -2,32 +2,33 @@
 
 import java.util.*;
 import java.io.File;
+import java.io.FileNotFoundException;
 class FindWord {
-    public static void main(String args[]) throws Exception {
+    public static void main(String args[]) throws FileNotFoundException {
         // Create class object
         FindWord obj = new FindWord();
 
         // Create File object for the file name entered by user in command line.
-        File textfile = new File("short.txt");
+        File textfile = new File(args[0]);
 
         // Remember count of occurences of word in text file.
         int occurences = 0;
 
         // Input word to be searched in text file.
         String word = "";
-        try (Scanner sc = new Scanner(System.in)) {
+        try (Scanner scan = new Scanner(System.in)) {
             // Prompt user to input the word to be searched
             System.out.print("Search-word: ");
-            word = "house";
+            word = scan.nextLine();
         }
         // Create Scanner object to read from text file.
-        try (Scanner sc = new Scanner(textfile)) {
+        try (Scanner scan = new Scanner(textfile)) {
 
             // Check if there is a next line in text file
-            while (sc.hasNextLine()) {
+            while (scan.hasNextLine()) {
 
                 // Get next line from text file.
-                String text = sc.nextLine();
+                String text = scan.nextLine();
 
                 // Find total number of occurences of the word in the text
                 occurences += obj.find(word, text);
@@ -58,7 +59,7 @@ class FindWord {
             if ((ch == ' ') || (index == lineLength - 1)) {
 
                 // Check for an occurence of word.
-                if (tmp == word) {
+                if (tmp.equals(word)) {
                     // Increment count.
                     ++count;
                 }
